@@ -1,0 +1,45 @@
+.aboutUs-container {
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+.aboutUs-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.aboutUs-image {
+    display: none;
+}
+
+.aboutUs-text h1 {
+    font-weight: 800;
+    font-size: xx-large;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.aboutUs-text p {
+    font-weight: 500;
+    font-size: large;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+
+    .aboutUs-wrapper {
+        gap: 1rem;
+    }
+    .aboutUs-image {
+        display: block;
+        width: 75%;
+        border-radius: 1rem;
+    }
+
+    .aboutUs-text {
+        width: 75%;
+    }    
+}
