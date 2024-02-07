@@ -6,7 +6,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchIcon from '@mui/icons-material/Search';
 import Link from 'next/link';
 
-export default function Product({ item }) {
+export default function ProductCard({ item }) {
     return (
         <div className='prod-container'>
 

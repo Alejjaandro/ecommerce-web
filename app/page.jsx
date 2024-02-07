@@ -5,9 +5,9 @@ import ProductCard from "@/components/ProductCard";
 import Link from "next/link";
 import './styles/Home.css';
 import Slider from "@/components/Slider";
+import Footer from "@/components/Footer";
 
 export default function Home() {
-    // console.log(products.slice(0, 3));
     const exampleProducts = products.slice(0, 8);
 
     return (
@@ -29,6 +29,8 @@ export default function Home() {
 
                 <Link className='home-link' href='/products'>See All Products</Link>
             </div>
+
+            <Footer />
 
         </div>
     );

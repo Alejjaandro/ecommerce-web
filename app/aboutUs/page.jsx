@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import './styles/aboutUs.css';
-// import Footer from '../components/Footer.js';
 
 export default function AboutUs() {
     return (
@@ -26,7 +26,7 @@ export default function AboutUs() {
 
                 </div>
             </div>
-            {/* <Footer></Footer> */}
+            <Footer />
         </>
 
     )
