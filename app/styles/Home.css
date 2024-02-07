@@ -1,0 +1,64 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+    background-color: grey;
+}
+
+.home-title {
+    font-size: x-large;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+.home-link {
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    width: 50%;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+
+    background-color: silver;
+    color: white;
+
+    &:hover {
+        background-color: rgb(95, 95, 95);
+        cursor: pointer;
+    }
+}
+
+.products-container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+    .products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Deskop Styles */
+@media screen and (min-width: 1024px) {
+    .products-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Deskop Styles */
+@media screen and (min-width: 1440px) {
+    .products-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
