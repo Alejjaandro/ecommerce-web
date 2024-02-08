@@ -33,14 +33,25 @@
     background-color: rgba(0, 0, 0, 0.2);
 
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
 
     transition: all 0.5s ease;
 
     &:hover {
         opacity: 1;
     }
+}
+.prod-info div {
+    display: flex;
+    gap: 2rem;
+}
+.prod-info p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .prod-icon {

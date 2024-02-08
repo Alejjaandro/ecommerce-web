@@ -14,13 +14,16 @@ export default function ProductCard({ item }) {
 
             <div className="prod-info">
 
-                <button className="prod-icon" onClick={(e) => handleShoppingCart(e)}>
-                    <ShoppingCartIcon />
-                </button>
+                <div>
+                    <button className="prod-icon" onClick={(e) => handleShoppingCart(e)}>
+                        <ShoppingCartIcon />
+                    </button>
+                    <Link className="prod-icon" href={`/products/${item.product}`}>
+                        <SearchIcon />
+                    </Link>
+                </div>
 
-                <Link className="prod-icon" href={`/product/${item.product}`}>
-                    <SearchIcon />
-                </Link>
+                <p>{item.product}</p>
 
             </div>
 

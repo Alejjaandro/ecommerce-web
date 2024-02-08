@@ -1,0 +1,86 @@
+.productList-container {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.products-list {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.title {
+    margin: 1rem;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.filter, .sort {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.50rem;
+    background-color: lightgray;
+}
+
+.filter-text {
+    font-size: medium;
+    font-weight: 600;
+}
+
+/* Selectors */
+.select {
+    width: 75%;
+    padding: 0.5rem;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .products-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .filter-text {
+        font-size: 1.25rem;
+    }
+
+    .select {
+        width: 100%;
+    }
+}
+/* Deskop styles */
+@media (min-width: 1024px) {
+    .products-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .filter {
+        gap: 1rem;
+    }
+    .filter-text {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1440px) {
+    .products-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (min-width: 1700px) {
+    .products-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+@media (min-width: 2560px) {
+    .products-list {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
