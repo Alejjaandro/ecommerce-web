@@ -34,7 +34,7 @@ export default function Footer() {
           <Link href='/'> - Home</Link>
           <Link href='/aboutUs'> - About Us</Link>
           <Link href='/contact'> - Contact</Link>
-          <Link href='/login'> - My Account</Link>
+          <Link href='/'> - My Account</Link>
         </div>
       </div>
 
